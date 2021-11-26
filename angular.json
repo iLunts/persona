@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "persona"
+    }
+  },
+  "defaultProject": "persona",
+  "cli": {
+    "analytics": "51afae5d-8202-4117-8df3-fb637de34a59"
+  }
 }
