@@ -1,33 +1,9 @@
+@import "block-color.less";
+
 .block {
   position: relative;
   overflow: hidden;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 5%;
-    right: -5%;
-    width: 60%;
-    height: 60%;
-    background: rgb(62, 193, 149);
-    background: -moz-radial-gradient(
-      circle,
-      rgba(62, 193, 149, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    background: -webkit-radial-gradient(
-      circle,
-      rgba(62, 193, 149, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    background: radial-gradient(
-      circle,
-      rgba(62, 193, 149, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ec195",endColorstr="#000000",GradientType=1);
-    filter: blur(100px);
-  }
+  min-height: 600px;
 
   &&--right {
     .block__body {
@@ -61,7 +37,7 @@
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 100px 0;
     z-index: 1;
   }
 
@@ -75,8 +51,59 @@
 
     &.block__item--img-no-padding {
       .block__img {
-        margin-bottom: -80px;
+        margin-bottom: -100px;
       }
+    }
+  }
+
+  & &__possibilities {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    &-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+
+      & + .block__possibilities-item {
+        margin-left: 40px;
+      }
+    }
+
+    &-body {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.1);
+      max-width: 320px;
+      padding: 0 40px 40px 40px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      z-index: 2;
+    }
+
+    &-title {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 600;
+      text-transform: uppercase;
+      max-width: 200px;
+      margin-bottom: 24px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+
+    &-img {
+      height: 200px;
     }
   }
 
