@@ -6,6 +6,7 @@ import { FaceFilterComponent } from './face-filter/face-filter.component';
 import { FunMasksComponent } from './fun-masks/fun-masks.component';
 import { ModelsFavoriteAppComponent } from './models-favorite-app/models-favorite-app.component';
 import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
     FunMasksComponent,
     ModelsFavoriteAppComponent,
   ],
-  imports: [CommonModule, NgxParallaxScrollModule],
+  imports: [CommonModule, NgxParallaxScrollModule, NgwWowModule],
   exports: [
     MainComponent,
     CameraComponent,

@@ -105,6 +105,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _face_filter_face_filter_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./face-filter/face-filter.component */ "EXMz");
 /* harmony import */ var _fun_masks_fun_masks_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fun-masks/fun-masks.component */ "zJ0b");
 /* harmony import */ var _models_favorite_app_models_favorite_app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./models-favorite-app/models-favorite-app.component */ "bYeR");
+/* harmony import */ var ngx_parallax_scroll__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-parallax-scroll */ "Xvhw");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-wow */ "ME1z");
+
+
 
 
 
@@ -116,12 +120,12 @@ __webpack_require__.r(__webpack_exports__);
 class BlocksModule {
 }
 BlocksModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: BlocksModule });
-BlocksModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function BlocksModule_Factory(t) { return new (t || BlocksModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
+BlocksModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function BlocksModule_Factory(t) { return new (t || BlocksModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], ngx_parallax_scroll__WEBPACK_IMPORTED_MODULE_7__["NgxParallaxScrollModule"], ngx_wow__WEBPACK_IMPORTED_MODULE_8__["NgwWowModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](BlocksModule, { declarations: [_main_main_component__WEBPACK_IMPORTED_MODULE_2__["MainComponent"],
         _camera_camera_component__WEBPACK_IMPORTED_MODULE_3__["CameraComponent"],
         _face_filter_face_filter_component__WEBPACK_IMPORTED_MODULE_4__["FaceFilterComponent"],
         _fun_masks_fun_masks_component__WEBPACK_IMPORTED_MODULE_5__["FunMasksComponent"],
-        _models_favorite_app_models_favorite_app_component__WEBPACK_IMPORTED_MODULE_6__["ModelsFavoriteAppComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]], exports: [_main_main_component__WEBPACK_IMPORTED_MODULE_2__["MainComponent"],
+        _models_favorite_app_models_favorite_app_component__WEBPACK_IMPORTED_MODULE_6__["ModelsFavoriteAppComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], ngx_parallax_scroll__WEBPACK_IMPORTED_MODULE_7__["NgxParallaxScrollModule"], ngx_wow__WEBPACK_IMPORTED_MODULE_8__["NgwWowModule"]], exports: [_main_main_component__WEBPACK_IMPORTED_MODULE_2__["MainComponent"],
         _camera_camera_component__WEBPACK_IMPORTED_MODULE_3__["CameraComponent"],
         _face_filter_face_filter_component__WEBPACK_IMPORTED_MODULE_4__["FaceFilterComponent"],
         _fun_masks_fun_masks_component__WEBPACK_IMPORTED_MODULE_5__["FunMasksComponent"],
@@ -136,7 +140,7 @@ BlocksModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
                     _fun_masks_fun_masks_component__WEBPACK_IMPORTED_MODULE_5__["FunMasksComponent"],
                     _models_favorite_app_models_favorite_app_component__WEBPACK_IMPORTED_MODULE_6__["ModelsFavoriteAppComponent"],
                 ],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], ngx_parallax_scroll__WEBPACK_IMPORTED_MODULE_7__["NgxParallaxScrollModule"], ngx_wow__WEBPACK_IMPORTED_MODULE_8__["NgwWowModule"]],
                 exports: [
                     _main_main_component__WEBPACK_IMPORTED_MODULE_2__["MainComponent"],
                     _camera_camera_component__WEBPACK_IMPORTED_MODULE_3__["CameraComponent"],
@@ -161,20 +165,25 @@ BlocksModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FaceFilterComponent", function() { return FaceFilterComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-wow */ "ME1z");
+
 
 
 class FaceFilterComponent {
-    constructor() { }
+    constructor(wowService) {
+        this.wowService = wowService;
+        this.wowService.init();
+    }
     ngOnInit() { }
 }
-FaceFilterComponent.ɵfac = function FaceFilterComponent_Factory(t) { return new (t || FaceFilterComponent)(); };
-FaceFilterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FaceFilterComponent, selectors: [["app-block-face-filter"]], decls: 15, vars: 0, consts: [[1, "block", "block--face-filter"], [1, "block__body"], [1, "block__item"], [1, "block__content"], [1, "block__title"], [1, "block__desc"], [1, "block__action"], ["href", "#", 1, "btn", "btn--store"], ["src", "/assets/svg/apple-store.svg", "alt", "", 1, "btn__img"], ["src", "/assets/svg/google-play.svg", "alt", "", 1, "btn__img"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "/assets/img/blocks/main.png", "alt", "", 1, "block__img"]], template: function FaceFilterComponent_Template(rf, ctx) { if (rf & 1) {
+FaceFilterComponent.ɵfac = function FaceFilterComponent_Factory(t) { return new (t || FaceFilterComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"])); };
+FaceFilterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FaceFilterComponent, selectors: [["app-block-face-filter"]], decls: 15, vars: 0, consts: [[1, "block", "block--face-filter"], [1, "block__body"], [1, "block__item"], [1, "block__content"], ["data-wow-duration", "1s", "data-wow-delay", "1s", 1, "block__title", "wow", "fadeInUp"], ["data-wow-duration", "1s", "data-wow-delay", "1.25s", 1, "block__desc", "wow", "fadeInUp"], ["data-wow-duration", "1s", "data-wow-delay", "2s", 1, "block__action", "wow", "fadeIn"], ["href", "#", 1, "btn", "btn--store"], ["src", "/assets/svg/apple-store.svg", "alt", "", 1, "btn__img"], ["src", "/assets/svg/google-play.svg", "alt", "", 1, "btn__img"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "/assets/img/blocks/natural-face-filters.png", "alt", "", 1, "block__img"]], template: function FaceFilterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Natural Face Filters");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Natural Face Filters ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " Highlight your natural beauty and hide all blemishes with the help of the unique Persona beauty masks. Unlike other beauty cameras, Persona masks look perfectly real. ");
@@ -202,7 +211,7 @@ FaceFilterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
                 templateUrl: './face-filter.component.html',
                 styleUrls: ['./face-filter.component.less'],
             }]
-    }], function () { return []; }, null); })();
+    }], function () { return [{ type: ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"] }]; }, null); })();
 
 
 /***/ }),
@@ -294,12 +303,14 @@ ComponentsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineI
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "Sy1n");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/home.component */ "1LmZ");
-/* harmony import */ var _shared_components_components_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shared/components/components.module */ "V/fk");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser/animations */ "R1ws");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/home/home.component */ "1LmZ");
+/* harmony import */ var _shared_components_components_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shared/components/components.module */ "V/fk");
+
 
 
 
@@ -309,16 +320,29 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
 }
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _shared_components_components_module__WEBPACK_IMPORTED_MODULE_5__["ComponentsModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _shared_components_components_module__WEBPACK_IMPORTED_MODULE_5__["ComponentsModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_0__["BrowserAnimationsModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+            _shared_components_components_module__WEBPACK_IMPORTED_MODULE_6__["ComponentsModule"],
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_0__["BrowserAnimationsModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+        _shared_components_components_module__WEBPACK_IMPORTED_MODULE_6__["ComponentsModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](AppModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-                declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]],
-                imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _shared_components_components_module__WEBPACK_IMPORTED_MODULE_5__["ComponentsModule"]],
+                declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]],
+                imports: [
+                    _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_0__["BrowserAnimationsModule"],
+                    _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                    _shared_components_components_module__WEBPACK_IMPORTED_MODULE_6__["ComponentsModule"],
+                ],
                 providers: [],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
             }]
     }], null, null); })();
 
@@ -402,12 +426,12 @@ class ModelsFavoriteAppComponent {
     ngOnInit() { }
 }
 ModelsFavoriteAppComponent.ɵfac = function ModelsFavoriteAppComponent_Factory(t) { return new (t || ModelsFavoriteAppComponent)(); };
-ModelsFavoriteAppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModelsFavoriteAppComponent, selectors: [["app-block-models-favorite-app"]], decls: 9, vars: 0, consts: [[1, "block", "block--center"], [1, "block__body"], [1, "block__content"], [1, "block__title"], [1, "block__desc"], [1, "block__gallery"], ["src", "/assets/img/blocks/models-gallery.png", "alt", "", 1, "block__img"]], template: function ModelsFavoriteAppComponent_Template(rf, ctx) { if (rf & 1) {
+ModelsFavoriteAppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModelsFavoriteAppComponent, selectors: [["app-block-models-favorite-app"]], decls: 9, vars: 0, consts: [[1, "block", "block--center"], [1, "block__body"], [1, "block__content"], ["data-wow-duration", "1s", "data-wow-delay", "1s", 1, "block__title", "wow", "fadeInUp"], ["data-wow-duration", "1s", "data-wow-delay", "1.25s", 1, "block__desc", "wow", "fadeInUp"], [1, "block__gallery"], ["data-wow-duration", "1s", "data-wow-delay", "2s", "src", "/assets/img/blocks/models-gallery.png", "alt", "", 1, "block__img", "wow", "zoomIn"]], template: function ModelsFavoriteAppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h2", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "MODELS' FAVOURITE APP");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " MODELS' FAVOURITE APP ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Our app is used by fashion models and content creators all over the world. Persona masks help them highlight their beauty without changing their facial features. ");
@@ -525,14 +549,24 @@ CameraComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainComponent", function() { return MainComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ngx_parallax_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-parallax-scroll */ "Xvhw");
+
 
 
 class MainComponent {
-    constructor() { }
+    constructor() {
+        this.parallaxConfig = {
+            parallaxSpeed: 1,
+            parallaxSmoothness: 1,
+            parallaxDirection: 'reverse',
+            parallaxTimingFunction: 'ease-in',
+            parallaxThrottleTime: 80,
+        };
+    }
     ngOnInit() { }
 }
 MainComponent.ɵfac = function MainComponent_Factory(t) { return new (t || MainComponent)(); };
-MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainComponent, selectors: [["app-block-main"]], decls: 16, vars: 0, consts: [[1, "block", "block--green"], [1, "block__body"], [1, "block__item"], [1, "block__content"], ["src", "/assets/img/logo.png", "alt", "", 1, "block__logo"], [1, "block__title"], [1, "block__desc"], [1, "block__action"], ["href", "#", 1, "btn", "btn--store"], ["src", "/assets/svg/apple-store.svg", "alt", "", 1, "btn__img"], ["src", "/assets/svg/google-play.svg", "alt", "", 1, "btn__img"], [1, "block__item", "block__item--img", "block__item--img-mo-padding"], ["src", "/assets/img/blocks/main.png", "alt", "", 1, "block__img"]], template: function MainComponent_Template(rf, ctx) { if (rf & 1) {
+MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainComponent, selectors: [["app-block-main"]], decls: 16, vars: 5, consts: [[1, "block", "block--green"], [1, "block__body"], [1, "block__item"], [1, "block__content", "wow", "fadeIn"], ["src", "/assets/img/logo.png", "alt", "", 1, "block__logo"], [1, "block__title"], [1, "block__desc"], [1, "block__action"], ["href", "#", 1, "btn", "btn--store"], ["src", "/assets/svg/apple-store.svg", "alt", "", 1, "btn__img"], ["src", "/assets/svg/google-play.svg", "alt", "", 1, "btn__img"], [1, "block__item", "block__item--img", "wow", "fadeIn"], ["src", "/assets/img/blocks/main.png", "alt", "parallax-img", "ngxParallaxScroll", "", 1, "block__img", 3, "parallaxSpeed", "parallaxSmoothness", "parallaxDirection", "parallaxTimingFunction", "parallaxThrottleTime"]], template: function MainComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -559,7 +593,10 @@ MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL2Jsb2Nrcy9tYWluL21haW4uY29tcG9uZW50Lmxlc3MifQ== */"] });
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("parallaxSpeed", 0.5)("parallaxSmoothness", 1)("parallaxDirection", "reverse")("parallaxTimingFunction", "linear")("parallaxThrottleTime", 3);
+    } }, directives: [ngx_parallax_scroll__WEBPACK_IMPORTED_MODULE_1__["ParallaxScrollDirective"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL2Jsb2Nrcy9tYWluL21haW4uY29tcG9uZW50Lmxlc3MifQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MainComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -630,13 +667,13 @@ class FunMasksComponent {
     ngOnInit() { }
 }
 FunMasksComponent.ɵfac = function FunMasksComponent_Factory(t) { return new (t || FunMasksComponent)(); };
-FunMasksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FunMasksComponent, selectors: [["app-block-fun-masks"]], decls: 15, vars: 0, consts: [[1, "block", "block--right", "block--fun-mask"], [1, "block__body"], [1, "block__item"], [1, "block__content"], [1, "block__title"], [1, "block__desc"], [1, "block__action"], ["href", "#", 1, "btn", "btn--store"], ["src", "/assets/svg/apple-store.svg", "alt", "", 1, "btn__img"], ["src", "/assets/svg/google-play.svg", "alt", "", 1, "btn__img"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "/assets/img/blocks/exclusive-fun-masks.png", "alt", "", 1, "block__img"]], template: function FunMasksComponent_Template(rf, ctx) { if (rf & 1) {
+FunMasksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FunMasksComponent, selectors: [["app-block-fun-masks"]], decls: 15, vars: 0, consts: [[1, "block", "block--right", "block--fun-mask"], [1, "block__body"], [1, "block__item"], [1, "block__content"], ["data-wow-duration", "1s", "data-wow-delay", "1s", 1, "block__title", "wow", "fadeInUp"], ["data-wow-duration", "1s", "data-wow-delay", "1.25s", 1, "block__desc", "wow", "fadeInUp"], ["data-wow-duration", "1s", "data-wow-delay", "2s", 1, "block__action", "wow", "fadeIn"], ["href", "#", 1, "btn", "btn--store"], ["src", "/assets/svg/apple-store.svg", "alt", "", 1, "btn__img"], ["src", "/assets/svg/google-play.svg", "alt", "", 1, "btn__img"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "/assets/img/blocks/exclusive-fun-masks.png", "alt", "", 1, "block__img"]], template: function FunMasksComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "EXCLUSIVE FUN MASKS");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " EXCLUSIVE FUN MASKS ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " We created many high quality face masks. You have never seen anything like this! Become a cartoon character or a demon, oldify yourself or turn into a baby. All this and so much more in one app! ");

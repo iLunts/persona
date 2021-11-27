@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IParallaxScrollConfig } from 'ngx-parallax-scroll';
+import { NgwWowService } from 'ngx-wow';
 
 @Component({
   selector: 'app-block-face-filter',
@@ -7,15 +7,9 @@ import { IParallaxScrollConfig } from 'ngx-parallax-scroll';
   styleUrls: ['./face-filter.component.less'],
 })
 export class FaceFilterComponent implements OnInit {
-  parallaxConfig: IParallaxScrollConfig = {
-    parallaxSpeed: 1,
-    parallaxSmoothness: 1,
-    parallaxDirection: 'reverse',
-    parallaxTimingFunction: 'ease-in',
-    parallaxThrottleTime: 80,
-  };
-
-  constructor() {}
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
 
   ngOnInit(): void {}
 }
