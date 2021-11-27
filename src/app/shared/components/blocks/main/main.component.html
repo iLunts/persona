@@ -18,8 +18,18 @@
         </div>
       </div>
     </div>
-    <div class="block__item block__item--img block__item--img-mo-padding">
-      <img class="block__img" src="/assets/img/blocks/main.png" alt="" />
+    <div class="block__item block__item--img">
+      <img
+        src="/assets/img/blocks/main.png"
+        class="block__img"
+        alt="parallax-img"
+        ngxParallaxScroll
+        [parallaxSpeed]="0.5"
+        [parallaxSmoothness]="1"
+        [parallaxDirection]="'reverse'"
+        [parallaxTimingFunction]="'linear'"
+        [parallaxThrottleTime]="3"
+      />
     </div>
   </div>
 </div>
