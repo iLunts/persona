@@ -24,7 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.less", "src/assets/fonts/fonts.less"],
+            "styles": ["src/styles.less"],
             "scripts": ["node_modules/wowjs/dist/wow.js"]
           },
           "configurations": {
