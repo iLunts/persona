@@ -145,3 +145,40 @@
     }
   }
 }
+
+// -------------------------------------------------------
+// Mobile size
+// -------------------------------------------------------
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .block-grad {
+    margin: 20px 0;
+
+    & &__body {
+      padding: 20px;
+      flex-direction: column-reverse;
+      border-radius: 16px;
+    }
+
+    & &__content {
+      width: 100%;
+    }
+
+    & &__images {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .block-pref {
+    flex-direction: column;
+
+    & &__item {
+      border-radius: 16px;
+      padding: 20px;
+
+      & + .block-pref__item {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .block {
+    & &__possibilities {
+      flex-direction: column;
+      margin-top: 30px;
+
+      &-item {
+        & + .block__possibilities-item {
+          margin: 32px 0 0 0;
+        }
+      }
+
+      &-body {
+        width: 100%;
+      }
+    }
+  }
+}

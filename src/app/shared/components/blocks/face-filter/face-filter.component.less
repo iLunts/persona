@@ -1,0 +1,23 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .block {
+    &&--face-filter:after {
+      top: 0;
+      z-index: 0;
+      filter: blur(200px);
+    }
+
+    & &__body {
+      flex-direction: column;
+    }
+
+    & &__action {
+      text-align: center;
+    }
+
+    & &__item {
+      & + .block__item {
+        margin-top: 40px;
+      }
+    }
+  }
+}

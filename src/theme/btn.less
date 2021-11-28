@@ -14,12 +14,21 @@
   color: #fff;
 
   &&--store {
+    background: #000;
     border: 1px solid #49e9b3;
-    min-width: 180px;
+    min-width: 200px;
     height: 52px;
   }
 
   & + & {
     margin-left: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .btn {
+    & + & {
+      margin: 15px 0 0 0;
+    }
   }
 }

@@ -51,3 +51,37 @@
     }
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .footer {
+    height: auto;
+    padding: 15px 0;
+
+    & &__logo {
+      flex-direction: column;
+
+      &-img {
+        margin: 0 0 15px 0;
+      }
+    }
+
+    & &__content {
+      flex-direction: column;
+    }
+
+    & &__menu {
+      display: flex;
+      flex-direction: column;
+      margin-top: 26px;
+
+      &-link {
+        display: inline-flex;
+        line-height: 34px;
+
+        & + .footer__menu-link {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
