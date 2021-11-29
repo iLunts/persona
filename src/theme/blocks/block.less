@@ -5,14 +5,6 @@
   overflow: hidden;
   min-height: 600px;
 
-  &&--main {
-    .block__item.block__item--img .block__img {
-      // max-width: 100%;
-      width: 100%;
-      max-width: 600px;
-    }
-  }
-
   &&--right {
     .block__body {
       flex-direction: row-reverse;
@@ -35,29 +27,6 @@
       max-width: 600px;
       text-align: center;
       margin: 0 auto;
-    }
-  }
-
-  &&--camera {
-    .block__body {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .block__title {
-      text-align: center;
-      // color: #3ec195;
-      background: -webkit-linear-gradient(45deg, #3ec195, #58ea81);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .block__desc {
-      max-width: 600px;
-      text-align: center;
-      margin: 0 auto;
-      color: #a0a0a0;
     }
   }
 
@@ -87,57 +56,6 @@
     }
   }
 
-  & &__possibilities {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    margin-top: 90px;
-
-    &-item {
-      position: relative;
-      border-radius: 8px;
-      overflow: hidden;
-
-      & + .block__possibilities-item {
-        margin-left: 40px;
-      }
-    }
-
-    &-body {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background: rgba(255, 255, 255, 0.1);
-      max-width: 320px;
-      padding: 0 40px 40px 40px;
-      text-align: center;
-      // backdrop-filter: blur(10px);
-      z-index: 2;
-    }
-
-    &-title {
-      font-size: 24px;
-      line-height: 34px;
-      font-weight: 600;
-      text-transform: uppercase;
-      max-width: 200px;
-      margin-bottom: 24px;
-    }
-
-    &-text {
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 400;
-    }
-
-    &-img {
-      height: 200px;
-    }
-  }
-
   & &__logo {
     width: 160px;
     height: 160px;
@@ -149,7 +67,7 @@
     line-height: 74px;
     margin-bottom: 20px;
     font-weight: 800;
-    letter-spacing: 3px;
+    text-transform: uppercase;
 
     &.block__title--700 {
       font-weight: 700;

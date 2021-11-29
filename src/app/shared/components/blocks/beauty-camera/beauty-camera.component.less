@@ -1,3 +1,31 @@
+.block {
+  &&--camera {
+    .block__body {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .block__title {
+      text-align: center;
+      font-size: 44px;
+      line-height: 54px;
+      font-weight: 800;
+      letter-spacing: 0;
+      background: -webkit-linear-gradient(45deg, #3ec195, #58ea81);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .block__desc {
+      max-width: 600px;
+      text-align: center;
+      margin: 0 auto;
+      color: #a0a0a0;
+    }
+  }
+}
+
 .block-grad {
   position: relative;
   display: flex;
@@ -84,6 +112,7 @@
     color: #dfdfdf;
     text-align: left;
     max-width: 450px;
+    font-weight: 500;
 
     & + .block-grad__text {
       margin-top: 25px;
