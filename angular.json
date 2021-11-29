@@ -23,7 +23,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets/favicon/apple-touch-icon.png",
+              "src/assets/favicon/favicon-16x16.png",
+              "src/assets/favicon/favicon-32x32.png",
+              "src/assets"
+            ],
             "styles": ["src/styles.less"],
             "scripts": ["node_modules/wowjs/dist/wow.js"]
           },
