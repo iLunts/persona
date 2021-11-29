@@ -1,5 +1,34 @@
 .block {
   &&--models {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50vw;
+      left: 50vw;
+      width: 50vw;
+      height: 50vw;
+      margin-left: -25vw;
+
+      background: rgb(62, 193, 149);
+      background: -moz-radial-gradient(
+        circle,
+        rgba(62, 193, 149, 1) 0%,
+        rgba(0, 0, 0, 1) 60%
+      );
+      background: -webkit-radial-gradient(
+        circle,
+        rgba(62, 193, 149, 1) 0%,
+        rgba(0, 0, 0, 1) 60%
+      );
+      background: radial-gradient(
+        circle,
+        rgba(62, 193, 149, 1) 0%,
+        rgba(0, 0, 0, 1) 60%
+      );
+      opacity: 0.5;
+    }
+
     .block__img {
       width: 100%;
       max-width: 100%;

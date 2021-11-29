@@ -1,5 +1,33 @@
 .block {
   &&--fun-mask {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -30vw;
+      width: 60vw;
+      height: 60vw;
+      margin-top: -15%;
+      background: rgb(6, 51, 158);
+      background: -moz-radial-gradient(
+        circle,
+        rgba(6, 51, 158, 1) 0%,
+        rgba(0, 0, 0, 1) 60%
+      );
+      background: -webkit-radial-gradient(
+        circle,
+        rgba(6, 51, 158, 1) 0%,
+        rgba(0, 0, 0, 1) 60%
+      );
+      background: radial-gradient(
+        circle,
+        rgba(6, 51, 158, 1) 0%,
+        rgba(0, 0, 0, 1) 60%
+      );
+      opacity: 0.6;
+    }
+
     .block__img {
       width: 300px;
     }
