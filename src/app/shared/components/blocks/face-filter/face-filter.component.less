@@ -28,6 +28,24 @@
       opacity: 0.6;
     }
 
+    .block__item {
+      .block__action {
+        display: block;
+      }
+
+      &.block__item--img {
+        justify-content: flex-end;
+
+        .block__action {
+          display: none;
+        }
+      }
+    }
+
+    .block__body {
+      max-width: 1040px;
+    }
+
     .block__img {
       width: 300px;
     }
@@ -36,10 +54,34 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .block {
-    &&--face-filter:after {
-      top: 0;
-      z-index: 0;
-      filter: blur(200px);
+    &&--face-filter {
+      &:after {
+        top: 5%;
+        bottom: auto;
+        margin-top: 0;
+        width: 100vw;
+        height: 100vw;
+        z-index: 0;
+      }
+
+      .block__item {
+        .block__action {
+          display: none;
+        }
+
+        &.block__item--img {
+          display: flex;
+          flex-direction: column;
+
+          .block__action {
+            display: block;
+          }
+
+          .block__img {
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
 
     & &__body {
@@ -52,12 +94,6 @@
 
     & &__img {
       width: 100%;
-    }
-
-    & &__item {
-      & + .block__item {
-        margin-top: 40px;
-      }
     }
   }
 }

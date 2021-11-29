@@ -38,9 +38,18 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .block {
-    &&--models:after {
-      z-index: 0;
-      filter: blur(200px);
+    &&--models {
+      &:after {
+        z-index: 0;
+      }
+
+      .block__img {
+        max-width: none;
+        width: 200%;
+        display: block;
+        margin: 0 auto;
+        margin-left: -50%;
+      }
     }
   }
 }

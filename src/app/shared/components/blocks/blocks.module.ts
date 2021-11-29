@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgwWowModule } from 'ngx-wow';
+import { ButtonsModule } from '../buttons/buttons.module';
 
 import { BeautyCameraComponent } from './beauty-camera/beauty-camera.component';
 import { CameraComponent } from './camera/camera.component';
@@ -18,7 +19,7 @@ import { ModelsFavoriteAppComponent } from './models-favorite-app/models-favorit
     MainComponent,
     ModelsFavoriteAppComponent,
   ],
-  imports: [CommonModule, NgwWowModule],
+  imports: [CommonModule, NgwWowModule, ButtonsModule],
   exports: [
     BeautyCameraComponent,
     CameraComponent,
