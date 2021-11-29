@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgwWowModule } from 'ngx-wow';
-import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
 
 import { BeautyCameraComponent } from './beauty-camera/beauty-camera.component';
 import { CameraComponent } from './camera/camera.component';
@@ -19,7 +18,7 @@ import { ModelsFavoriteAppComponent } from './models-favorite-app/models-favorit
     MainComponent,
     ModelsFavoriteAppComponent,
   ],
-  imports: [CommonModule, NgxParallaxScrollModule, NgwWowModule],
+  imports: [CommonModule, NgwWowModule],
   exports: [
     BeautyCameraComponent,
     CameraComponent,

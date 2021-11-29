@@ -1,5 +1,11 @@
 .block {
   &&--main {
+    min-height: auto;
+
+    .block__body {
+      padding: 60px 0;
+    }
+
     .block__title {
       letter-spacing: 3px;
     }
@@ -7,6 +13,21 @@
     .block__item.block__item--img .block__img {
       width: 100%;
       max-width: 600px;
+    }
+  }
+}
+
+// -------------------------------------------------------
+// Mobile size
+// -------------------------------------------------------
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .block {
+    &&--main {
+      .block__logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+      }
     }
   }
 }
