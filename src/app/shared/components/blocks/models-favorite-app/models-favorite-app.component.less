@@ -36,6 +36,20 @@
   }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .block {
+    &&--models {
+      &:after {
+        width: 100vw;
+        height: 100vw;
+        right: 50%;
+        left: 50%;
+        margin-left: -50%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .block {
     &&--models {

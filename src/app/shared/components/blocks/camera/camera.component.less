@@ -52,9 +52,31 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .block {
-    & &__item {
+    .block__item {
       width: 100%;
       justify-content: center;
+    }
+
+    & &__possibilities {
+      padding: 0;
+
+      &-item {
+        & + .block__possibilities-item {
+          margin-left: 20px;
+        }
+      }
+
+      &-body {
+        padding: 0 15px 20px;
+      }
+
+      &-title {
+        margin: 0;
+      }
+
+      &-text {
+        display: none;
+      }
     }
   }
 }
