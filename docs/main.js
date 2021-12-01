@@ -85,7 +85,7 @@ class BeautyCameraComponent {
     ngOnInit() { }
 }
 BeautyCameraComponent.ɵfac = function BeautyCameraComponent_Factory(t) { return new (t || BeautyCameraComponent)(); };
-BeautyCameraComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BeautyCameraComponent, selectors: [["app-block-beauty-camera"]], decls: 34, vars: 0, consts: [[1, "block", "block--camera"], [1, "block__body"], [1, "block__content"], [1, "block__title"], [1, "block__desc"], [1, "block-grad"], [1, "block-grad__body"], [1, "block-grad__content"], [1, "block-grad__text"], [1, "block-grad__images"], ["src", "/assets/img/blocks/persona-gradient.png", "alt", "", 1, "block-grad__images-img"], [1, "block-pref"], [1, "block-pref__item"], ["src", "./assets/svg/icons/check.svg", "alt", "", 1, "block-pref__img"], [1, "block-pref__text"]], template: function BeautyCameraComponent_Template(rf, ctx) { if (rf & 1) {
+BeautyCameraComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BeautyCameraComponent, selectors: [["app-block-beauty-camera"]], decls: 34, vars: 0, consts: [[1, "block", "block--camera"], [1, "block__body"], [1, "block__content"], [1, "block__title"], [1, "block__desc"], [1, "block-grad"], [1, "block-grad__body"], [1, "block-grad__content"], [1, "block-grad__text"], [1, "block-grad__images"], ["src", "./assets/img/blocks/persona-gradient.png", "alt", "", 1, "block-grad__images-img"], [1, "block-pref"], [1, "block-pref__item"], ["src", "./assets/svg/icons/check.svg", "alt", "", 1, "block-pref__img"], [1, "block-pref__text"]], template: function BeautyCameraComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -312,7 +312,7 @@ class FaceFilterComponent {
     ngOnInit() { }
 }
 FaceFilterComponent.ɵfac = function FaceFilterComponent_Factory(t) { return new (t || FaceFilterComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"])); };
-FaceFilterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FaceFilterComponent, selectors: [["app-block-face-filter"]], decls: 14, vars: 0, consts: [[1, "block", "block--face-filter"], [1, "block__body"], [1, "block__item"], [1, "block__content"], [1, "block__title", "block__title--700"], [1, "block__desc"], [1, "block__action"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "/assets/img/blocks/natural-face-filters.png", "alt", "", 1, "block__img"]], template: function FaceFilterComponent_Template(rf, ctx) { if (rf & 1) {
+FaceFilterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FaceFilterComponent, selectors: [["app-block-face-filter"]], decls: 14, vars: 0, consts: [[1, "block", "block--face-filter"], [1, "block__body"], [1, "block__item"], [1, "block__content"], [1, "block__title", "block__title--700"], [1, "block__desc"], [1, "block__action"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "./assets/img/blocks/natural-face-filters.png", "alt", "", 1, "block__img"]], template: function FaceFilterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -552,7 +552,7 @@ class ModelsFavoriteAppComponent {
     ngOnInit() { }
 }
 ModelsFavoriteAppComponent.ɵfac = function ModelsFavoriteAppComponent_Factory(t) { return new (t || ModelsFavoriteAppComponent)(); };
-ModelsFavoriteAppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModelsFavoriteAppComponent, selectors: [["app-block-models-favorite-app"]], decls: 11, vars: 0, consts: [[1, "block", "block--center", "block--models"], [1, "block__body"], [1, "block__content"], [1, "block__title", "block__title--700"], [1, "block__desc"], [1, "block__gallery"], ["src", "/assets/img/blocks/models-gallery.png", "alt", "", 1, "block__img"]], template: function ModelsFavoriteAppComponent_Template(rf, ctx) { if (rf & 1) {
+ModelsFavoriteAppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModelsFavoriteAppComponent, selectors: [["app-block-models-favorite-app"]], decls: 11, vars: 0, consts: [[1, "block", "block--center", "block--models"], [1, "block__body"], [1, "block__content"], [1, "block__title", "block__title--700"], [1, "block__desc"], [1, "block__gallery"], ["src", "./assets/img/blocks/models-gallery.png", "alt", "", 1, "block__img"]], template: function ModelsFavoriteAppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -741,7 +741,7 @@ class MainComponent {
     ngOnInit() { }
 }
 MainComponent.ɵfac = function MainComponent_Factory(t) { return new (t || MainComponent)(); };
-MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainComponent, selectors: [["app-block-main"]], decls: 15, vars: 0, consts: [[1, "block", "block--green", "block--main"], [1, "block__body"], [1, "block__item"], [1, "block__content"], ["src", "./assets/img/logo.png", "alt", "", 1, "block__logo"], [1, "block__title"], [1, "block__desc"], [1, "block__action"], [1, "block__item", "block__item--img"], ["src", "/assets/img/blocks/main.png", "alt", "parallax-img", 1, "block__img"]], template: function MainComponent_Template(rf, ctx) { if (rf & 1) {
+MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainComponent, selectors: [["app-block-main"]], decls: 15, vars: 0, consts: [[1, "block", "block--green", "block--main"], [1, "block__body"], [1, "block__item"], [1, "block__content"], ["src", "./assets/img/logo.png", "alt", "", 1, "block__logo"], [1, "block__title"], [1, "block__desc"], [1, "block__action"], [1, "block__item", "block__item--img"], ["src", "./assets/img/blocks/main.png", "alt", "parallax-img", 1, "block__img"]], template: function MainComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -839,7 +839,7 @@ class FunMasksComponent {
     ngOnInit() { }
 }
 FunMasksComponent.ɵfac = function FunMasksComponent_Factory(t) { return new (t || FunMasksComponent)(); };
-FunMasksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FunMasksComponent, selectors: [["app-block-fun-masks"]], decls: 14, vars: 0, consts: [[1, "block", "block--right", "block--fun-mask"], [1, "block__body"], [1, "block__item"], [1, "block__content"], [1, "block__title", "block__title--700"], [1, "block__desc"], [1, "block__action"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "/assets/img/blocks/exclusive-fun-masks.png", "alt", "", 1, "block__img"]], template: function FunMasksComponent_Template(rf, ctx) { if (rf & 1) {
+FunMasksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FunMasksComponent, selectors: [["app-block-fun-masks"]], decls: 14, vars: 0, consts: [[1, "block", "block--right", "block--fun-mask"], [1, "block__body"], [1, "block__item"], [1, "block__content"], [1, "block__title", "block__title--700"], [1, "block__desc"], [1, "block__action"], [1, "block__item", "block__item--img", "block__item--img-no-padding"], ["src", "./assets/img/blocks/exclusive-fun-masks.png", "alt", "", 1, "block__img"]], template: function FunMasksComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
