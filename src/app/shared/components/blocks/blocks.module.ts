@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { NgwWowModule } from 'ngx-wow';
 import { ButtonsModule } from '../buttons/buttons.module';
 
 import { BeautyCameraComponent } from './beauty-camera/beauty-camera.component';
+import { BlockAboutComponent } from './about/about.component';
 import { CameraComponent } from './camera/camera.component';
 import { FaceFilterComponent } from './face-filter/face-filter.component';
 import { FunMasksComponent } from './fun-masks/fun-masks.component';
@@ -12,6 +14,7 @@ import { ModelsFavoriteAppComponent } from './models-favorite-app/models-favorit
 
 @NgModule({
   declarations: [
+    BlockAboutComponent,
     BeautyCameraComponent,
     CameraComponent,
     FaceFilterComponent,
@@ -19,7 +22,7 @@ import { ModelsFavoriteAppComponent } from './models-favorite-app/models-favorit
     MainComponent,
     ModelsFavoriteAppComponent,
   ],
-  imports: [CommonModule, NgwWowModule, ButtonsModule],
+  imports: [CommonModule, NgwWowModule, ButtonsModule, RouterModule],
   exports: [
     BeautyCameraComponent,
     CameraComponent,
@@ -27,6 +30,7 @@ import { ModelsFavoriteAppComponent } from './models-favorite-app/models-favorit
     FunMasksComponent,
     MainComponent,
     ModelsFavoriteAppComponent,
+    BlockAboutComponent,
   ],
 })
 export class BlocksModule {}
